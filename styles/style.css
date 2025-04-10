@@ -11,9 +11,11 @@ body {
     top: 0;
     overflow: hidden;
 }
-.nav-logo{
+
+.nav-logo {
     height: 50px;
 }
+
 .top-menu-item {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -76,14 +78,18 @@ body {
     align-items: center;
     justify-content: center;
     width: 80%;
-    margin-top: 30px;
-    padding-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .contact-container {
     width: 80%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .circle {
@@ -97,7 +103,8 @@ body {
     align-items: center;
     margin-bottom: 20px;
 }
-.circle img{
+
+.circle img {
     height: 200px;
 }
 
@@ -111,7 +118,7 @@ h4 {
     font-family: Montserrat;
     font-size: 64px;
     margin: 0;
-    padding: 20px;
+    padding: 15px;
     letter-spacing: 5px;
 }
 
@@ -122,13 +129,14 @@ h2 {
     font-style: normal;
     letter-spacing: 15px;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 h3 {
     font-family: Roboto;
     font-size: 40px;
-    margin-top: 30px;
-    margin-bottom: 0px;
+    /* margin-top: 30px; */
+    margin-bottom: 10px;
 }
 
 h4 {
@@ -137,20 +145,13 @@ h4 {
     align-self: flex-start;
 }
 
-p {
-    font-family: Roboto, sans-serif, Montserrat;
-    font-size: 24px;
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 1.5;
-}
-
 .para {
+    font-family: Roboto, sans-serif, Montserrat;
     font-size: 20px;
     font-weight: 600;
     padding: 5px;
     letter-spacing: 2px;
+    line-height: 1.5;
 }
 
 .skill-icons {
@@ -163,14 +164,6 @@ p {
 .contact-container h3 {
     padding: 0;
     margin-bottom: 10px;
-}
-
-.para {
-    font-family: Roboto, sans-serif, Montserrat;
-    padding: 0;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1px;
 }
 
 .name-div,
@@ -331,16 +324,11 @@ label {
     justify-self: center;
     justify-items: center;
     background-color: #d9e3ee;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .project:hover {
     background-color: #aeecc3;
-}
-
-#work-section p {
-    font-size: 12px;
-    padding-bottom: 10px;
 }
 
 .project-image {
@@ -352,52 +340,63 @@ label {
 }
 
 @media (min-width: 570px) and (max-width: 800px) {
-    h1{
+    h1 {
         font-size: 48px;
         font-weight: 900;
     }
-    h2{
+
+    h2 {
         font-size: 32px;
         font-weight: 900;
         letter-spacing: 10px;
     }
-    h3,h4{
+
+    h3,
+    h4 {
         font-size: 24px;
         font-weight: 700;
     }
-    .para{
-        font-size: 16px;
+
+    .para {
+        font-size: 14px;
     }
+
     .project-image {
-        height: 80px;
-        width: 140px;
+        height: 70px;
+        width: 130px;
         margin: 20px;
     }
 }
 
-@media (width <= 570px) {
-    h1{
+@media (width <=570px) {
+    h1 {
         font-size: 20px;
         font-weight: 900;
         align-self: center;
     }
-    h2{
+
+    h2 {
         font-size: 18px;
         font-weight: 700;
         font-family: monospace;
         align-self: center;
         letter-spacing: 0px;
     }
-    h3,h4{
-        font-size: 11px;
+
+    h3,
+    h4 {
+        font-size: 14px;
         font-weight: 900;
     }
-    .para{
+
+    .para {
         font-size: 12px;
     }
-    .section-container{
+
+    .section-container {
         margin-top: 30px;
     }
+
     .grid-container-projects {
         /* display: grid;
         grid-template-columns: auto auto auto; */
@@ -405,33 +404,42 @@ label {
         flex-direction: column;
         justify-content: space-between;
         margin-top: 30px;
-        margin-bottom: 80px;
+        margin-bottom: 30px;
     }
+
     .project {
         align-self: center;
         justify-self: center;
         justify-items: center;
         background-color: #d9e3ee;
-        border-radius: 10px;
+        border-radius: 5px;
         margin-bottom: 30px;
     }
+
     .project-image {
         height: 100px;
         width: 170px;
         margin: 20px;
     }
-    .name-email{
+
+    .name-email {
         flex-direction: column;
     }
-    .name-div,.email-div{
+
+    .name-div,
+    .email-div {
         margin: 0px;
     }
-    .footer-links, .footer-sm{
+
+    .footer-links,
+    .footer-sm {
         margin: 20px;
     }
-    .circle img{
+
+    .circle img {
         height: 150px;
     }
+
     .circle {
         height: 180px;
         width: 180px;
@@ -443,15 +451,18 @@ label {
         align-items: center;
         margin-bottom: 20px;
     }
-    .top-menu-item{
+
+    .top-menu-item {
         font-size: 11px;
         font-weight: 700;
         margin: 5px;
     }
-    .nav-logo{
+
+    .nav-logo {
         height: 25px;
     }
-    #nav-container{
+
+    #nav-container {
         height: 50px;
     }
 }
