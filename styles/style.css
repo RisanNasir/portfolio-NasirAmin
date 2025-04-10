@@ -11,8 +11,10 @@ body {
     top: 0;
     overflow: hidden;
 }
-
-#nav-section a {
+.nav-logo{
+    height: 50px;
+}
+.top-menu-item {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: #b9d6f2;
@@ -74,7 +76,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 80%;
-    padding-top: 50px;
+    margin-top: 30px;
     padding-bottom: 50px;
 }
 
@@ -126,7 +128,7 @@ h3 {
     font-family: Roboto;
     font-size: 40px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 h4 {
@@ -144,7 +146,7 @@ p {
     line-height: 1.5;
 }
 
-#about-section p {
+.para {
     font-size: 20px;
     font-weight: 600;
     padding: 5px;
@@ -163,7 +165,7 @@ p {
     margin-bottom: 10px;
 }
 
-.contact-container p {
+.para {
     font-family: Roboto, sans-serif, Montserrat;
     padding: 0;
     font-size: 16px;
@@ -337,14 +339,15 @@ label {
 }
 
 #work-section p {
-    font-size: 16px;
+    font-size: 12px;
+    padding-bottom: 10px;
 }
 
 .project-image {
     /* max-width: 220px;
     max-height: 130px; */
-    height: 100px;
-    width: 200px;
+    height: 130px;
+    width: 220px;
     margin: 20px;
 }
 
@@ -358,39 +361,42 @@ label {
         font-weight: 900;
         letter-spacing: 10px;
     }
-    h3{
+    h3,h4{
         font-size: 24px;
         font-weight: 700;
     }
+    .para{
+        font-size: 16px;
+    }
     .project-image {
-        height: 70px;
-        width: 150px;
+        height: 80px;
+        width: 140px;
         margin: 20px;
     }
 }
 
 @media (width <= 570px) {
     h1{
-        font-size: 24px;
-        font-weight: 700;
+        font-size: 20px;
+        font-weight: 900;
         align-self: center;
     }
     h2{
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 18px;
+        font-weight: 700;
         font-family: monospace;
         align-self: center;
         letter-spacing: 0px;
     }
     h3,h4{
-        font-size: 16px;
-        font-weight: 500;
+        font-size: 11px;
+        font-weight: 900;
     }
     .para{
-        font-size: 14px;
+        font-size: 12px;
     }
-    #about-section p {
-        font-size: 14px;
+    .section-container{
+        margin-top: 30px;
     }
     .grid-container-projects {
         /* display: grid;
@@ -410,8 +416,8 @@ label {
         margin-bottom: 30px;
     }
     .project-image {
-        height: 150px;
-        width: 250px;
+        height: 100px;
+        width: 170px;
         margin: 20px;
     }
     .name-email{
@@ -436,5 +442,16 @@ label {
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
+    }
+    .top-menu-item{
+        font-size: 11px;
+        font-weight: 700;
+        margin: 5px;
+    }
+    .nav-logo{
+        height: 25px;
+    }
+    #nav-container{
+        height: 50px;
     }
 }
