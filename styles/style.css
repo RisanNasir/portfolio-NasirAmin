@@ -147,11 +147,16 @@ h4 {
 
 .para {
     font-family: Roboto, sans-serif, Montserrat;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
     padding: 5px;
     letter-spacing: 2px;
     line-height: 1.5;
+}
+
+.contact-me {
+    margin: 0;
+    padding: 0;
 }
 
 .skill-icons {
@@ -312,10 +317,11 @@ label {
 /* Latest Work section style as grid */
 .grid-container-projects {
     /* display: grid;
-    grid-template-columns: auto auto auto; */
+    grid-template-columns: auto auto auto;
+    column-gap: 30px; */
     display: flex;
-    column-gap: 30px;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
     margin-top: 30px;
     margin-bottom: 80px;
 }
@@ -335,9 +341,9 @@ label {
 .project-image {
     /* max-width: 220px;
     max-height: 130px; */
-    height: 130px;
-    width: 220px;
-    margin: 20px;
+    height: 90px;
+    width: 200px;
+    margin: 10px;
 }
 
 @media (min-width: 570px) and (max-width: 800px) {
@@ -363,8 +369,8 @@ label {
     }
 
     .project-image {
-        height: 70px;
-        width: 130px;
+        height: 50px;
+        width: 100px;
         margin: 20px;
     }
 }
@@ -388,6 +394,7 @@ label {
     h4 {
         font-size: 14px;
         font-weight: 900;
+        padding: 0;
     }
 
     .para {
@@ -396,6 +403,7 @@ label {
 
     .section-container {
         margin-top: 30px;
+        width: 90%;
     }
 
     .grid-container-projects {
@@ -403,9 +411,10 @@ label {
         grid-template-columns: auto auto auto; */
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 30px;
         margin-bottom: 30px;
+        width: 100%;
     }
 
     .project {
@@ -418,8 +427,8 @@ label {
     }
 
     .project-image {
-        height: 100px;
-        width: 170px;
+        height: auto;
+        width: auto;
         margin: 20px;
     }
 
@@ -465,5 +474,9 @@ label {
 
     #nav-container {
         height: 50px;
+    }
+
+    ul {
+        padding-left: 0px;
     }
 }
