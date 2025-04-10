@@ -232,10 +232,11 @@ label {
     margin-top: 20px;
     align-self: end;
     background-color: #1e2939;
-    color: white;
+    color: #b9d6f2;
     outline: none;
     border: none;
     border-radius: 5px;
+    font-weight: 600;
 }
 
 .submit-btn:hover {
